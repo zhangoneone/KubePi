@@ -25,7 +25,7 @@ else
     echo "install go"
     wget https://dl.google.com/go/go1.21.3.linux-amd64.tar.gz
     sudo tar -C /usr/local -xzf go1.21.3.linux-amd64.tar.gz
-    echo PATH=$PATH:/usr/local/go/bin >> ~/.bashrc
+    echo 'PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
     source ~/.bashrc
 fi
 

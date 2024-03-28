@@ -16,12 +16,12 @@ module.exports = {
                 target: 'http://0.0.0.0:4400',
             },
             '/kubepi/api': {
-                target: 'http://0.0.0.0:2019',
+                target: 'http://127.0.0.1:80',
                 ws: true,
                 secure: false,
             },
             '/webkubectl': {
-                target: 'http://0.0.0.0:2019',
+                target: 'http://127.0.0.1:80',
                 ws: true,
                 secure: false,
             },
