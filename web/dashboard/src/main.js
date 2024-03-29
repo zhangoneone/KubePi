@@ -54,7 +54,7 @@ Vue.filter('dateFormat', function(dataStr, pattern='YYYY-MM-DD HH:mm:ss'){
 new Vue({
   el: '#app',
   i18n,
-  router,
-  store,
-  render: h => h(App),
+  router, //页面导航和路由的工具
+  store, 
+  render: h => h(App), //根组件是名为App的组件，App组件将会挂载到名为‘app’的DOM元素上
 })

@@ -3,10 +3,10 @@ import "@/styles/index.scss"
 import "@/assets/iconfont/iconfont"
 import '@/assets/iconfont/iconfont.css'
 import "@/styles/common/kubepi.css"
-import {library} from '@fortawesome/fontawesome-svg-core'
-import {fas} from '@fortawesome/free-solid-svg-icons'
-import {far} from '@fortawesome/free-regular-svg-icons'
-import {fab} from '@fortawesome/free-brands-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 import App from "./App.vue"
 import Fit2CloudUI from "fit2cloud-ui"
 import ElementUI from "element-ui"
@@ -33,10 +33,10 @@ Vue.use(Fit2CloudUI, {
 })
 Vue.use(VueCodemirror);
 
-library.add(fas, far, fab)
+library.add(fas, far, fab) //添加3个图标集？
 
 Vue.use(icons);
-Vue.use(directives);
+Vue.use(directives); //前置路由
 Vue.use(filters)
 new Vue({
     el: '#app',

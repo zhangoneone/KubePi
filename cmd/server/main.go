@@ -46,6 +46,7 @@ var webkubectlEntrypointLinux string
 //go:embed helper/ip/qqwry.dat
 var IpCommonDictionary []byte
 
+// 在main函数执行前，init会被调用。用于解析命令行参数
 func init() {
 	RootCmd.Flags().StringVar(&serverBindHost, "server-bind-host", "", "kubepi bind address")
 	RootCmd.Flags().IntVar(&serverBindPort, "server-bind-port", 0, "kubepi bind port")

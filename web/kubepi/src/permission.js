@@ -4,6 +4,7 @@ import "nprogress/nprogress.css"
 import store from "./store"
 import Layout from "@/business/app-layout/horizontal-layout"
 
+//这份代码的作用，是在用户访问页面之前进行权限验证和路由生成
 NProgress.configure({showSpinner: false}) // NProgress Configuration
 
 const whiteList = ["/login"] // no redirect whitelist
